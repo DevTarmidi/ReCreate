@@ -1,11 +1,11 @@
-    <div style="width:100%;height:80%;" >
+    <div style="width:100%;height:75%;" >
 		<div class="row" style="width:100%;">
-		  <div class="text-center" style="background-color: inherit; width:30%;">
+		  <div class="text-center" style="background-color:inherit; width:30%;">
 		    <div class="tab">
-		  <button class="tablinks active" onclick="openCity(event, 'elemen')" id="defaultOpen">Elemen</button>
-		  <button class="tablinks" onclick="openCity(event, 'teks')">Teks</button>
-		  <button class="tablinks" onclick="openCity(event, 'layer')">Layer</button>
-		</div>
+					<button class="tablinks active" onclick="openCity(event, 'elemen')" id="defaultOpen">Elemen</button>
+					<button class="tablinks" onclick="openCity(event, 'teks')">Teks</button>
+					<button class="tablinks" onclick="openCity(event, 'layer')">Layer</button>
+				</div>
 		<div id="elemen" class="tabcontent">
 		  <form class="navbar-form mt-1" role="search">
 			<div class="input-group">
@@ -67,7 +67,7 @@
 	
           </div>
 		  <div id="canvas" class="text-center" style="width:70%;">
-			<div id="dvDest" style="width:400px; height:300px; background-color:white; overflow : none; position: absolute; top: 25%; left: 50%; z-index:-1">
+			<div id="dvDest" style="width:400px; height:300px; background-color:white; overflow : none; position: absolute; top: 25%; left: 50%; z-index: -1;">
 				
 			</div>
 		  </div>
