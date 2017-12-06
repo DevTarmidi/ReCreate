@@ -16,22 +16,22 @@
 			</div>
 		  </form>
 		  <div id="dvSource" class="mt-1" style="height:90%; width:100%; overflow : auto; background-color:white;">
-				<img id="Chrysanthemum" src="images/Chrysanthemum.jpg" />
-				<img id="Desert" src="images/Desert.jpg" />
-				<img id="Hydrangeas" src="images/Hydrangeas.jpg" />
-				<img id="Jellyfish" src="images/Jellyfish.jpg" />
-				<img id="Koala" src="images/Koala.jpg" />
-				<img id="Lighthouse" src="images/Lighthouse.jpg" />
-				<img id="Penguins" src="images/Penguins.jpg" />
-				<img id="Tulips" src="images/Tulips.jpg" />
-				<img id="Chrysanthemum" src="images/Chrysanthemum.jpg" />
-				<img id="Desert" src="images/Desert.jpg" />
-				<img id="Hydrangeas" src="images/Hydrangeas.jpg" />
-				<img id="Jellyfish" src="images/Jellyfish.jpg" />
-				<img id="Koala" src="images/Koala.jpg" />
-				<img id="Lighthouse" src="images/Lighthouse.jpg" />
-				<img id="Penguins" src="images/Penguins.jpg" />
-				<img id="Tulips" src="images/Tulips.jpg" />
+				<img id="Chrysanthemum" src="<?php echo base_url(); ?>images/Chrysanthemum.jpg" />
+				<img id="Desert" src="<?php echo base_url(); ?>images/Desert.jpg" />
+				<img id="Hydrangeas" src="<?php echo base_url(); ?>images/Hydrangeas.jpg" />
+				<img id="Jellyfish" src="<?php echo base_url(); ?>images/Jellyfish.jpg" />
+				<img id="Koala" src="<?php echo base_url(); ?>images/Koala.jpg" />
+				<img id="Lighthouse" src="<?php echo base_url(); ?>images/Lighthouse.jpg" />
+				<img id="Penguins" src="<?php echo base_url(); ?>images/Penguins.jpg" />
+				<img id="Tulips" src="<?php echo base_url(); ?>images/Tulips.jpg" />
+				<img id="Chrysanthemum" src="<?php echo base_url(); ?>images/Chrysanthemum.jpg" />
+				<img id="Desert" src="<?php echo base_url(); ?>images/Desert.jpg" />
+				<img id="Hydrangeas" src="<?php echo base_url(); ?>images/Hydrangeas.jpg" />
+				<img id="Jellyfish" src="<?php echo base_url(); ?>images/Jellyfish.jpg" />
+				<img id="Koala" src="<?php echo base_url(); ?>images/Koala.jpg" />
+				<img id="Lighthouse" src="<?php echo base_url(); ?>images/Lighthouse.jpg" />
+				<img id="Penguins" src="<?php echo base_url(); ?>images/Penguins.jpg" />
+				<img id="Tulips" src="<?php echo base_url(); ?>images/Tulips.jpg" />
 		  </div>
 		</div>
 		<div id="teks" class="tabcontent">
