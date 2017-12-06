@@ -1,11 +1,11 @@
-    <div style="width:100%;height:80%;" >
+    <div style="width:100%;height:75%;" >
 		<div class="row" style="width:100%;">
-		  <div class="text-center" style="background-color: inherit; width:30%;">
+		  <div class="text-center" style="background-color:inherit; width:30%;">
 		    <div class="tab">
-		  <button class="tablinks active" onclick="openCity(event, 'elemen')" id="defaultOpen">Elemen</button>
-		  <button class="tablinks" onclick="openCity(event, 'teks')">Teks</button>
-		  <button class="tablinks" onclick="openCity(event, 'layer')">Layer</button>
-		</div>
+					<button class="tablinks active" onclick="openCity(event, 'elemen')" id="defaultOpen">Elemen</button>
+					<button class="tablinks" onclick="openCity(event, 'teks')">Teks</button>
+					<button class="tablinks" onclick="openCity(event, 'layer')">Layer</button>
+				</div>
 		<div id="elemen" class="tabcontent">
 		  <form class="navbar-form mt-1" role="search">
 			<div class="input-group">
@@ -16,22 +16,22 @@
 			</div>
 		  </form>
 		  <div id="dvSource" class="mt-1" style="height:90%; width:100%; overflow : auto; background-color:white;">
-				<img id="Chrysanthemum" src="images/Chrysanthemum.jpg" />
-				<img id="Desert" src="images/Desert.jpg" />
-				<img id="Hydrangeas" src="images/Hydrangeas.jpg" />
-				<img id="Jellyfish" src="images/Jellyfish.jpg" />
-				<img id="Koala" src="images/Koala.jpg" />
-				<img id="Lighthouse" src="images/Lighthouse.jpg" />
-				<img id="Penguins" src="images/Penguins.jpg" />
-				<img id="Tulips" src="images/Tulips.jpg" />
-				<img id="Chrysanthemum" src="images/Chrysanthemum.jpg" />
-				<img id="Desert" src="images/Desert.jpg" />
-				<img id="Hydrangeas" src="images/Hydrangeas.jpg" />
-				<img id="Jellyfish" src="images/Jellyfish.jpg" />
-				<img id="Koala" src="images/Koala.jpg" />
-				<img id="Lighthouse" src="images/Lighthouse.jpg" />
-				<img id="Penguins" src="images/Penguins.jpg" />
-				<img id="Tulips" src="images/Tulips.jpg" />
+				<img id="Chrysanthemum" src="<?php echo base_url(); ?>images/Chrysanthemum.jpg" />
+				<img id="Desert" src="<?php echo base_url(); ?>images/Desert.jpg" />
+				<img id="Hydrangeas" src="<?php echo base_url(); ?>images/Hydrangeas.jpg" />
+				<img id="Jellyfish" src="<?php echo base_url(); ?>images/Jellyfish.jpg" />
+				<img id="Koala" src="<?php echo base_url(); ?>images/Koala.jpg" />
+				<img id="Lighthouse" src="<?php echo base_url(); ?>images/Lighthouse.jpg" />
+				<img id="Penguins" src="<?php echo base_url(); ?>images/Penguins.jpg" />
+				<img id="Tulips" src="<?php echo base_url(); ?>images/Tulips.jpg" />
+				<img id="Chrysanthemum" src="<?php echo base_url(); ?>images/Chrysanthemum.jpg" />
+				<img id="Desert" src="<?php echo base_url(); ?>images/Desert.jpg" />
+				<img id="Hydrangeas" src="<?php echo base_url(); ?>images/Hydrangeas.jpg" />
+				<img id="Jellyfish" src="<?php echo base_url(); ?>images/Jellyfish.jpg" />
+				<img id="Koala" src="<?php echo base_url(); ?>images/Koala.jpg" />
+				<img id="Lighthouse" src="<?php echo base_url(); ?>images/Lighthouse.jpg" />
+				<img id="Penguins" src="<?php echo base_url(); ?>images/Penguins.jpg" />
+				<img id="Tulips" src="<?php echo base_url(); ?>images/Tulips.jpg" />
 		  </div>
 		</div>
 		<div id="teks" class="tabcontent">
@@ -67,7 +67,7 @@
 	
           </div>
 		  <div id="canvas" class="text-center" style="width:70%;">
-			<div id="dvDest" style="width:400px; height:300px; background-color:white; overflow : none; position: absolute; top: 25%; left: 50%; z-index:-1">
+			<div id="dvDest" style="width:400px; height:300px; background-color:white; overflow : none; position: absolute; top: 25%; left: 50%; z-index: -1;">
 				
 			</div>
 		  </div>
