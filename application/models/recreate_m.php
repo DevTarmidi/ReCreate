@@ -13,11 +13,11 @@ class recreate_m extends CI_Model {
     return $this->db->insert('user', $user);
   }
 
-  function getUser($email) {
-    $user = $this->db->where('email', $email)->get('users')->row_array();
-    if(count($user) > 0) return $user;
-    return false;
+  function getUser($user, $pass)
+  {
+       $sql = "select * from user where username = '" . $user . "' and password = '" . md5($pass);
+       $query = $this->db->query($sql);
+       return $query->num_rows();
   }
-
-
+  
 }

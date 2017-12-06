@@ -49,6 +49,8 @@
 					<?php echo form_close(); ?>
 					<?php echo $this->session->flashdata('msg'); ?>
 				</div>
+				<br>
+				<center>Already have an account? <a href="http://localhost/recreate/">Sign In</a>.</center>
 			</div>
 		</div>
 

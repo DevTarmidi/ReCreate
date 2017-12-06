@@ -48,8 +48,7 @@ class signup extends CI_Controller {
             if ($this->recreate_m->insertUser($data))
             {
 				$this->session->set_flashdata(
-					'msg','<div class="alert alert-success text-center">Successfully Registered! 
-					<a href="http://localhost/recreate/index.php/" class="alert-link">Sign in</a>.</div>');
+					'msg','<div class="alert alert-success text-center">Successfully Registered!</div>');
 				redirect('signup');
             }
             else
