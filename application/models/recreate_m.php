@@ -15,7 +15,7 @@ class recreate_m extends CI_Model {
 
   function getUser($user, $pass)
   {
-       $sql = "select * from user where username = '" . $user . "' and password = '" . md5($pass);
+       $sql = "select * from user where username = '" . $user . "' and password = '" . md5($pass) . "'";
        $query = $this->db->query($sql);
        return $query->num_rows();
   }

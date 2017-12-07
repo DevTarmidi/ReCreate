@@ -40,11 +40,11 @@
                         <input id="btn_login" name="btn_login" type="submit" class="btn btn-primary" value="Sign In" />
                     </div>
                 </div>
-                <br>
-                <center>Don't have an account? <a href="http://localhost/recreate/index.php/signup">Sign Up</a>.</center>
             </fieldset>
             <?php echo form_close(); ?>
             <?php echo $this->session->flashdata('msg'); ?>
+            <br>
+            <center>Don't have an account? <a href="http://localhost/recreate/index.php/signup">Sign Up</a>.</center>
         </div>
 
         <div class="col-md-4 col-md-offset-3">

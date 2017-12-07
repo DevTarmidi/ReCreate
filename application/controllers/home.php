@@ -36,7 +36,7 @@ class home extends CI_Controller {
 		else
 		{
 			//validation succeeds
-			if ($this->input->post('btn_login') == "Login")
+			if ($this->input->post('btn_login') == "Sign In")
 			{
 				//check if username and password is correct
 				$usr_result = $this->recreate_m->getUser($username, $password);
