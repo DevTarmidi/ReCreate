@@ -12,11 +12,12 @@
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
-		<?php if ($menu != 4){ goto end;} ?>
+		<?php if ($menu != 4){ goto styl;} ?>
 		<script type="text/javascript" src="vendor\w3\w3color.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
     <!-- Custom styles for this template -->
+		<?php styl: ?>
     <style>
       body {
         padding-top: 54px;
@@ -122,7 +123,7 @@
 
   </head>
 
-  <body>
+  <body <?php if($menu<=1){echo "style=\"background-image:url(".base_url()."images/background/background.jpg);background-repeat:no-repeat;background-size:cover; background-position:center center;\"";} ?>>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">

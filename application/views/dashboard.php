@@ -38,7 +38,7 @@
         .tabcontent {
             float: left;
             padding: 0px 12px;
-            background-color: #fff;
+            background-color: rgba(225,225,225,0.9);
             width: 90%;
             border-left: none;
             height: 100%;
@@ -57,12 +57,12 @@
                         <h3>New Project</h3><hr/>
                         <div id="layout" class="text-left" style="width:90%;" align="center">
                             <a href="main.html">
-                                <div id="400p" class="col-lg-3 text-center" style="width:100px; height:75px; background-color:#ccc; margin:2px;">
+                                <div id="400p" class="col-lg-3 text-center" style="width:100px; height:75px; background-color:#fff; margin:2px;">
                                     400x300
                                 </div>
                             </a>
                             <a href="main.html?w=800&h=450">
-                                <div id="800p" class="col-lg-3 text-center" style="width:200px; height:112px; background-color:#ccc; margin:2px;">
+                                <div id="800p" class="col-lg-3 text-center" style="width:200px; height:112px; background-color:#fff; margin:2px;">
                                     800x450
                                 </div>
                             </a>
