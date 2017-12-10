@@ -15,7 +15,7 @@
 			  </div>
 			</div>
 		  </form>
-		  <div id="dvSource" class="mt-1" style="height:90%; width:100%; overflow : auto; background-color:white;">
+		  <div id="dvSource" class="mt-1" style="height:90%; width:100%; overflow : auto; background-color:white;z-index:0;">
 				<img id="Chrysanthemum" src="<?php echo base_url(); ?>images/Chrysanthemum.jpg" />
 				<img id="Desert" src="<?php echo base_url(); ?>images/Desert.jpg" />
 				<img id="Hydrangeas" src="<?php echo base_url(); ?>images/Hydrangeas.jpg" />

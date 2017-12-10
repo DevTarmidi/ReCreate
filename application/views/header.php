@@ -13,7 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
 		<?php if ($menu != 4){ goto styl;} ?>
-		<script type="text/javascript" src="vendor\w3\w3color.js"></script>
+		<script type="text/javascript" src="<?php echo base_url(); ?>js\w3color.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
     <!-- Custom styles for this template -->
