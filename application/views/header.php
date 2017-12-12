@@ -11,7 +11,7 @@
     <title>Re:Create</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
 		<?php if ($menu != 4){ goto styl;} ?>
 		<link href="<?php echo base_url(); ?>font.css" rel="stylesheet">
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/w3color.js"></script>

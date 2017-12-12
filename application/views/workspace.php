@@ -88,13 +88,11 @@
 										if ($("#dvDest img").length == 0) {
 												$("#dvDest").html("");
 										}
-										ui.draggable.addClass("dropped");
-										ui.draggable.addClass("resizable");
+										ui.draggable.addClass("dropped");										
 										ui.draggable.removeClass("draggable");
 										$(ui.draggable).clone().appendTo($(this));
 									}	
 							}),
-							$( "#Tulips2" ).dragable();
 							$( "#sortable" ).sortable();
 							$( "#sortable" ).disableSelection();
 					});
