@@ -15,7 +15,7 @@
 			  </div>
 			</div>
 		  </form>
-		  <div id="dvSource" class="mt-1" style="height:90%; width:100%; overflow : auto; background-color:white;z-index:0;">
+		  <div id="dvSource" class="mt-1" style="height:90%; width:100%; overflow : auto; background-color:white;z-index:2;">
 				<img id="Chrysanthemum" src="<?php echo base_url(); ?>images/Chrysanthemum.jpg" />
 				<img id="Desert" src="<?php echo base_url(); ?>images/Desert.jpg" />
 				<img id="Hydrangeas" src="<?php echo base_url(); ?>images/Hydrangeas.jpg" />
@@ -66,9 +66,9 @@
 	</div>
 	
           </div>
-		  <div id="canvas" class="text-center" style="width:70%;">
-			<div id="dvDest" style="width:400px; height:300px; background-color:white; overflow : none; position: absolute; top: 25%; left: 50%; z-index: -1;">
-				
+		  <div id="canvas" class="text-center" style="width:70%;z-index: -1;">
+			<div id="dvDest" style="width:400px; height:300px; background-color:white; overflow : none; position: absolute; top: 25%; left: 50%;z-index: 0;">
+				<img id="Tulips2" src="<?php echo base_url(); ?>images/Tulips.jpg" />
 			</div>
 		  </div>
 		</div>
@@ -94,7 +94,7 @@
 										$(ui.draggable).clone().appendTo($(this));
 									}	
 							}),
-							$( "#dvDest img" ).resize();
+							$( "#Tulips2" ).dragable();
 							$( "#sortable" ).sortable();
 							$( "#sortable" ).disableSelection();
 					});
