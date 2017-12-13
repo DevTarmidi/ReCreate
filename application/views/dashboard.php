@@ -44,9 +44,22 @@
             height: 100%;
         }
     </style>
-    <div style="width:100%;height:80%;" >
-		<div class="row" style="width:100%;">
-		  <div class="text-center" style="background-color: inherit; width:100%;">
+
+    <div style="width: 98.9%;height:20%;"  >
+		<div class="row" style="background-color:#526373;">
+        <form class="navbar-form mt-1" role="search">
+			<div class="input-group mt-2">
+			  <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+			  <div class="input-group-btn">
+				<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-send"></i></button>
+			  </div>
+			</div>
+		  </form>
+        </div>
+    </div>
+    <div style="width: 98.9%;height:20%;">
+        <div class="row" style="background-color:#eee;">
+		  <div class="text-center" style=" width:100%;">
 		    <div class="tab">
                 <button class="tablinks active" onclick="openTab(event, 'new')" id="defaultOpen">New</button>
                 <button class="tablinks" onclick="openTab(event, 'yfile')">My Files</button>
