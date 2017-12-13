@@ -11,7 +11,7 @@ class home extends CI_Controller {
 		$this->load->helper('html');
 		$this->load->database();
 		$this->load->library('form_validation');
-		$this->load->model('recreate_m');
+		$this->load->model('m_url');
 	}
 
 	public function index()
@@ -36,7 +36,7 @@ class home extends CI_Controller {
 		else
 		{
 			//validation succeeds
-			if ($this->input->post('btn_login') == "Sign In")
+			if ($this->input->post('btn_singkat') == "Singkat")
 			{
 				//check if username and password is correct
 				$usr_result = $this->recreate_m->getUser($username, $password);
@@ -61,5 +61,31 @@ class home extends CI_Controller {
 				redirect('home');
 			}
 		}
+	}
+
+	public function singkat(){
+		$this->form_validation->set_rules("txt_url", "URL", "trim|required");
+		$original = $this->input->post("txt_url");
+		$hash = md5($original);
+		$shorten = substr($hash, 0, 6);
+		
+		// check ke db udah ada atau belum
+		if (!$this->m_url->isExistOri($original)) {
+			$this->m_url->insert($original, $shorten);
+		}
+
+		// kalo link short udah ada, hashing lagi
+		while ($this->m_url->isExistShorten($shorten)) {
+			$hash = md5($shorten);
+			$shorten = substr($hash, 0, 6);
+		}
+		
+		// pesan berhasil ngasih link short
+		$this->session->set_flashdata('msg', '<div class="alert alert-success text-center">Your shorten url is <a href="'.base_url().$shorten.'">singkat.in/'.$shorten.'</div>');
+		redirect('home');
+	}
+
+	public function redirect() {
+		
 	}
 }

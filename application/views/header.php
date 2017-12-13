@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Singkat.in | Persingkat URL untuk kemudahan hidup anda</title>
+    <title>Singkat.in</title>
 
     <!-- Bootstrap core CSS -->
 		<link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
@@ -119,7 +119,7 @@
 
   </head>
 
-  <body <?php if($menu<=4 ){echo "style=\"background-image:url(".base_url()."images/background/background.jpg);background-repeat:no-repeat;background-size:cover; background-position:center center;\"";} ?>>
+  <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -138,11 +138,8 @@
             <li class="nav-item <?php if ($menu == 2) {echo "active";} ?>">
               <a class="nav-link" href="<?php if ($menu == 2) {echo "#";} else {echo site_url()."about";} ?>">Tentang</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">|</a>
-            </li>
             <li class="nav-item <?php if ($menu == 3) {echo "active";} ?>">
-              <a class="nav-link" href="<?php if ($menu == 3) {echo "#";} else {echo site_url()."sign";} ?>">Masuk</a>
+              <a class="nav-link" href="<?php if ($menu == 3) {echo "#";} else {echo site_url()."contact";} ?>">Kontak</a>
             </li>
           </ul>
         </div>
