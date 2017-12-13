@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Re:Create</title>
+    <title>Singkat.in</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
@@ -123,27 +123,27 @@
 
   </head>
 
-  <body <?php if($menu<=1){echo "style=\"background-image:url(".base_url()."images/background/background.jpg);background-repeat:no-repeat;background-size:cover; background-position:center center;\"";} ?>>
+  <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="<?php echo site_url();?>">Re:Create</a>
+        <a class="navbar-brand" href="<?php echo site_url();?>">Singkat.in</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item <?php if ($menu == 1) {echo "active";} ?>">
-              <a class="nav-link" href="<?php if ($menu == 1) {echo "#";} else {echo site_url();} ?>">Home
+              <a class="nav-link" href="<?php if ($menu == 1) {echo "#";} else {echo site_url();} ?>">Beranda
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item <?php if ($menu == 2) {echo "active";} ?>">
-              <a class="nav-link" href="<?php if ($menu == 2) {echo "#";} else {echo site_url()."about";} ?>">About</a>
+              <a class="nav-link" href="<?php if ($menu == 2) {echo "#";} else {echo site_url()."about";} ?>">Tentang</a>
             </li>
             <li class="nav-item <?php if ($menu == 3) {echo "active";} ?>">
-              <a class="nav-link" href="<?php if ($menu == 3) {echo "#";} else {echo site_url()."contact";} ?>">Contact</a>
+              <a class="nav-link" href="<?php if ($menu == 3) {echo "#";} else {echo site_url()."contact";} ?>">Kontak</a>
             </li>
           </ul>
         </div>

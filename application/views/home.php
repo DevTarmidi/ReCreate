@@ -4,10 +4,10 @@
         <div class="col-md-4 col-md-offset-3">
 		</div>
 
-        <div class="col-lg-4 col-sm-4 well mt-5" style="background-color:rgba(255,255,255,0.7); border-radius:10px;">
+        <div class="col-lg-4 col-sm-4 well mt-5" style="background-color:rgba(255,255,255,1); border-radius:10px;">
             <?php 
             $attributes = array("class" => "form-horizontal", "id" => "loginform", "name" => "loginform");
-            echo form_open("home", $attributes);?>
+            echo form_open("home/singkat", $attributes);?>
             <fieldset style="padding:20px 10px 30px 10px;">
                 <center><h4>Singkat.in</h4</center>
                 <br><br>
@@ -25,7 +25,7 @@
 
                 <div class="form-group">
                     <div class="col-lg-12 col-sm-12" align="right">
-                        <input id="btn_singkat" name="btn_singkat" type="submit" class="btn btn-success" value="Ringkas" />
+                        <input id="btn_singkat" name="btn_singkat" type="submit" class="btn btn-success" value="Singkat" />
                     </div>
                 </div>
             </fieldset>
