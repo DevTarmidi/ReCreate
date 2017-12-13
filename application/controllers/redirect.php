@@ -11,7 +11,7 @@ class redirect extends CI_Controller {
         if (!$result) {
             // halaman not found
             return;
-        }
+        }        
 
         redirect($result->original); //lookup the original URL and redirect
     }

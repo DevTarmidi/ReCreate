@@ -66,26 +66,30 @@ class home extends CI_Controller {
 	public function singkat(){
 		$this->form_validation->set_rules("txt_url", "URL", "trim|required");
 		$original = $this->input->post("txt_url");
+		
+		if (!$this->form_validation->run()) {
+			$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">url cannot be empty</div>');
+			redirect('home');
+			return;
+		}
+
+		$original = strpos($original, 'http') === false ? sprintf('http://%s', $original) : $original; 
 		$hash = md5($original);
 		$shorten = substr($hash, 0, 6);
 		
 		// check ke db udah ada atau belum
 		if (!$this->m_url->isExistOri($original)) {
-			$this->m_url->insert($original, $shorten);
-		}
+			// kalo link short udah ada, hashing lagi
+			while ($this->m_url->isExistShorten($shorten)){
+				$hash = md5($shorten);
+				$shorten = substr($hash, 0, 6);
+			};
 
-		// kalo link short udah ada, hashing lagi
-		while ($this->m_url->isExistShorten($shorten)) {
-			$hash = md5($shorten);
-			$shorten = substr($hash, 0, 6);
+			$this->m_url->insert($original, $shorten);
 		}
 		
 		// pesan berhasil ngasih link short
-		$this->session->set_flashdata('msg', '<div class="alert alert-success text-center">Your shorten url is <a href="'.base_url().$shorten.'">singkat.in/'.$shorten.'</div>');
+		$this->session->set_flashdata('msg', '<div class="alert alert-success text-center">Your shorten url is <a href="'.base_url().$shorten.'" target="_blank">singkat.in/'.$shorten.'</div>');
 		redirect('home');
-	}
-
-	public function redirect() {
-		
 	}
 }
