@@ -11,11 +11,12 @@
     <title>Singkat.in</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
-		<?php if ($menu != 4){ goto styl;} ?>
-		<script type="text/javascript" src="vendor\w3\w3color.js"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+		<link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
+		<?php if ($menu != 4 ){ goto styl;} ?>
+		<link href="<?php echo base_url(); ?>font.css" rel="stylesheet">
+		<script type="text/javascript" src="<?php echo base_url(); ?>js/w3color.js"></script>
+		<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/jquery-ui.min.js" type="text/javascript"></script>
     <!-- Custom styles for this template -->
 		<?php styl: ?>
     <style>
@@ -32,11 +33,6 @@
       
         * {box-sizing: border-box}
 				body {font-family: "Lato", sans-serif;}
-				@font-face{font-family:'Glyphicons Halflings';src:url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot);src:url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff) format('woff'),url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-				.glyphicon-search:before{content:"\e003"}
-				.glyphicon-sort:before{content:"\e150"}
-				.glyphicon-floppy-disk:before{content:"\e172"}
-				.glyphicon-export:before{content:"\e170"}
 			/* Style the tab */
 			div.tab {
 				float: left;

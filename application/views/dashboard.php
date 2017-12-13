@@ -2,10 +2,9 @@
         /* Style the tab */
         div.tab {
             float: left;
-            border: 1px solid #fff;
+            border: none;
             background-color: #ddd;
-            width: 10%;
-            height: 550px;
+            width: 30%;            
         }
 
         
@@ -14,7 +13,7 @@
             display: block;
             background-color: inherit;
             color: black;
-            padding: 22px 16px;
+            padding: 11px 16px;
             width: 100%;
             border: none;
             outline: none;
@@ -38,35 +37,49 @@
         .tabcontent {
             float: left;
             padding: 0px 12px;
-            background-color: rgba(225,225,225,0.9);
-            width: 90%;
+            background-color: #fff;
+            width: 70%;
             border-left: none;
             height: 100%;
         }
     </style>
-    <div style="width:100%;height:80%;" >
-		<div class="row" style="width:100%;">
-		  <div class="text-center" style="background-color: inherit; width:100%;">
-		    <div class="tab">
-                <button class="tablinks active" onclick="openTab(event, 'new')" id="defaultOpen">New</button>
-                <button class="tablinks" onclick="openTab(event, 'yfile')">My Files</button>
+
+    <div style="width: 98.9%;"  >
+		<div class="row text-center" style="background-color:#526373; height:50pt">
+            <form class="navbar-form mt-1" style="position: absolute; left: 25%; width:50%;visibility:hidden;">
+                <div class="input-group mt-2">
+                <input class="form-control" placeholder="Tempel URL panjang disini" name="send" id="send" type="text">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-chevron-right" style="color:#656363;" title="Persingkat!"></i></button>
+                </div>
+                </div>
+            </form>
+            <hr>
+            <form class="navbar-form mt-1" role="search" style="position: absolute; left: 15%; width:70%;visibility:visible;">
+                <div class="input-group mt-2">
+                    <h4 style="color:#8d9dad;padding-top: 5px;margin-bottom: 0px;">Costumize : </h4>
+                    <label for="title" style="color:#fff;padding-top: 8px; padding-left: 20px; padding-right: 10px; margin-bottom: 0px;">Judul</label>
+                    <input class="form-control" placeholder="Judul" name="title" id="title" type="text">
+                    <label for="send" style="color:#fff;padding-top: 8px; padding-left: 40px; margin-bottom: 0px;">singkat.in/</label>
+                    <input class="form-control" placeholder="Kode singkat.in" name="send" id="send" type="text">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-chevron-right" style="color:#656363;" title="Persingkat!"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="width: 98.9%;height:20%;">
+        <div class="row" style="background-color:#eee;">
+		  <div class="text-center" style=" width:100%; ">
+		    <div class="tab" style="height:495px; overflow-y: scroll;">
+                <button class="tablinks active" onclick="openTab(event, 'new')" id="defaultOpen">Link 1 <br><i style="color:#888;">singkat.in/blabla</i></button>
+                <button class="tablinks" onclick="openTab(event, 'yfile')">Link 21 <br><i style="color:#888;">singkat.in/bleble</i></button>
             </div>
             <div id="new" class="tabcontent">
-                <div class="container">
+                <div class="container" style="height:495px;";>
                     <div class="row mt-1">
-                        <h3>New Project</h3><hr/>
-                        <div id="layout" class="text-left" style="width:90%;" align="center">
-                            <a href="main.html">
-                                <div id="400p" class="col-lg-3 text-center" style="width:100px; height:75px; background-color:#fff; margin:2px;">
-                                    400x300
-                                </div>
-                            </a>
-                            <a href="main.html?w=800&h=450">
-                                <div id="800p" class="col-lg-3 text-center" style="width:200px; height:112px; background-color:#fff; margin:2px;">
-                                    800x450
-                                </div>
-                            </a>
-                        </div>
+                        <h3>New Project</h3>
                     </div>
                 </div>
             </div>
