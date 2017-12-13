@@ -119,7 +119,7 @@
 
   </head>
 
-  <body <?php if($menu<=1){echo "style=\"background-image:url(".base_url()."images/background/background.jpg);background-repeat:no-repeat;background-size:cover; background-position:center center;\"";} ?>>
+  <body <?php if($menu<=4 ){echo "style=\"background-image:url(".base_url()."images/background/background.jpg);background-repeat:no-repeat;background-size:cover; background-position:center center;\"";} ?>>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -131,15 +131,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item <?php if ($menu == 1) {echo "active";} ?>">
-              <a class="nav-link" href="<?php if ($menu == 1) {echo "#";} else {echo site_url();} ?>">Home
+              <a class="nav-link" href="<?php if ($menu == 1) {echo "#";} else {echo site_url();} ?>">Beranda
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item <?php if ($menu == 2) {echo "active";} ?>">
-              <a class="nav-link" href="<?php if ($menu == 2) {echo "#";} else {echo site_url()."about";} ?>">About</a>
+              <a class="nav-link" href="<?php if ($menu == 2) {echo "#";} else {echo site_url()."about";} ?>">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">|</a>
             </li>
             <li class="nav-item <?php if ($menu == 3) {echo "active";} ?>">
-              <a class="nav-link" href="<?php if ($menu == 3) {echo "#";} else {echo site_url()."contact";} ?>">Contact</a>
+              <a class="nav-link" href="<?php if ($menu == 3) {echo "#";} else {echo site_url()."sign";} ?>">Masuk</a>
             </li>
           </ul>
         </div>
