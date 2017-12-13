@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
 		<link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
-		<?php if ($menu != 4){ goto styl;} ?>
+		<?php if ($menu != 4 ){ goto styl;} ?>
 		<link href="<?php echo base_url(); ?>font.css" rel="stylesheet">
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/w3color.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.min.js"></script>
@@ -124,7 +124,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="<?php echo site_url();?>">Re:Create</a>
+        <a class="navbar-brand" href="<?php echo site_url();?>">Singkat.in</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
