@@ -138,8 +138,11 @@
             <li class="nav-item <?php if ($menu == 2) {echo "active";} ?>">
               <a class="nav-link" href="<?php if ($menu == 2) {echo "#";} else {echo site_url()."about";} ?>">Tentang</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link">|</a>
+            </li>
             <li class="nav-item <?php if ($menu == 3) {echo "active";} ?>">
-              <a class="nav-link" href="<?php if ($menu == 3) {echo "#";} else {echo site_url()."contact";} ?>">Kontak</a>
+              <a class="nav-link" href="<?php if ($menu == 3) {echo "#";} else {echo site_url()."sign";} ?>">Masuk</a>
             </li>
           </ul>
         </div>

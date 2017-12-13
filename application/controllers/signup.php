@@ -8,7 +8,7 @@ class signup extends CI_Controller {
 		$this->load->helper(array('form', 'url'));
 		$this->load->library(array('session', 'form_validation', 'email'));
 		$this->load->database();
-		$this->load->model('recreate_m');
+		$this->load->model('m_user');
 	}
 	
 	public function index()
@@ -45,7 +45,7 @@ class signup extends CI_Controller {
             );
             
             // insert form data into database
-            if ($this->recreate_m->insertUser($data))
+            if ($this->m_user->insertUser($data))
             {
 				$this->session->set_flashdata(
 					'msg','<div class="alert alert-success text-center">Successfully Registered!</div>');

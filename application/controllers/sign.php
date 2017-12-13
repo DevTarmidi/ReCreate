@@ -11,7 +11,7 @@ class sign extends CI_Controller {
 		$this->load->helper('html');
 		$this->load->database();
 		$this->load->library('form_validation');
-		$this->load->model('recreate_m');
+		$this->load->model('m_user');
 	}
 
 	public function index()
@@ -39,7 +39,7 @@ class sign extends CI_Controller {
 			if ($this->input->post('btn_login') == "Sign In")
 			{
 				//check if username and password is correct
-				$usr_result = $this->recreate_m->getUser($username, $password);
+				$usr_result = $this->m_user->getUser($username, $password);
 				if ($usr_result > 0) //active user record is present
 				{
 					//set the session variables
